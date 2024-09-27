@@ -33,3 +33,19 @@ export const PROJECTS = [
     }
 
 ]
+
+export const EDUCATION = [
+  {
+    degree: "Bachelor of Science in Computer Science",
+    institution: "University of New South Wales (UNSW), Australia",
+    duration: "September 2022 - September 2024",
+    description:
+      "I am a skilled software engineer proficient in fundamental concepts and practices, including object-oriented design and algorithmic problem-solving. I have experience in multiple programming paradigms, with a focus on Rust for systems programming. I am skilled in front-end web development, database systems, concurrent programming, and software verification. I possess comprehensive knowledge of computer systems, human-computer interaction, and project management. I am aware of ethical considerations and professional standards in IT, with experience in collaborative development and agile methodologies. Additionally, I am capable of designing user-centered interfaces and conducting usability studies to enhance user experience.",
+  },
+  {
+    degree: "Bachelor of Science in Information & Technology Management and Computer Science",
+    institution: "University of Auckland, New Zealand",
+    duration: "July 2021 - June 2022 (Transferred to UNSW)",
+    description: "I have a solid foundation in computer science, with skills in programming, system architecture, and digital systems design. I developed a strong understanding of coding and system infrastructure through courses focused on programming fundamentals and systems. My additional coursework in business software and digital systems management provided practical experience with tools and systems relevant to business operations. These combined skills demonstrate my ability to work effectively in both software development and system design, highlighting a versatile technical skill set."
+  },
+];

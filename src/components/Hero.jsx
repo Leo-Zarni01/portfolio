@@ -1,5 +1,7 @@
 import React from 'react';
 import profilePic from '../assets/profilePic.png';
+import Resume from '../assets/Resume.pdf';
+import { IoMdDownload } from 'react-icons/io';
 
 const Hero = () => {
   return (
@@ -23,6 +25,16 @@ const Hero = () => {
               expand my skills into embedded systems development using languages
               like Rust and Go.
             </p>
+            <a
+              href="../assets/Resume.pdf"
+              download="Resume.pdf"
+              className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
+            >
+              <div className="flex items-center">
+                <span>Download Resume</span>
+                <IoMdDownload />
+              </div>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">

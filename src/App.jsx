@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
+import EducationSection from './components/EducationSection';
+import ContactForm from './components/ContactForm';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Hero />
         <Technologies />
         <Projects />
+        <EducationSection />
+        <ContactForm />
       </div>
     </div>
   );
