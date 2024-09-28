@@ -2,6 +2,15 @@ import myfridge from "../assets/myfridge.png";
 import nerdstation from "../assets/nerdstation.png";
 import cotam from "../assets/cotam.png";
 import portfolio from "../assets/portfolio.png";
+
+export const NAVIGATION_LINKS = [
+  { label: "About", href: "#about" },
+  { label: "Technologies", href: "#technologies" },
+  { label: "Projects", href: "#projects" },
+  { label: "Education", href: "#education" },
+  { label: "Contact", href: "#contact" },
+];
+
 export const PROJECTS = [
     {
         id: 1,

@@ -5,6 +5,8 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import EducationSection from './components/EducationSection';
 import ContactForm from './components/ContactForm';
+import { NavBarAlt } from './components/NavbarAlt';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -13,12 +15,14 @@ const App = () => {
         <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
       </div>
       <div className="container mx-auto px-8">
-        <Navbar />
+        <NavBarAlt />
+        {/* <Navbar /> */}
         <Hero />
         <Technologies />
         <Projects />
         <EducationSection />
         <ContactForm />
+        <Footer />
       </div>
     </div>
   );

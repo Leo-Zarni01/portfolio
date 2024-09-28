@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { FiSend } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -67,7 +68,13 @@ const ContactForm = () => {
       <h2 className="my-8 text-center text-4xl font-semibold bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text tracking-tight text-transparent">
         Let's Connect
       </h2>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+      <motion.form
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.7 }}
+        onSubmit={handleSubmit}
+        className="max-w-lg mx-auto"
+      >
         <div className="mb-4 flex flex-col lg:flex-row lg:space-x-4">
           <div className="lg:w-3/4">
             <input
@@ -80,7 +87,13 @@ const ContactForm = () => {
               className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
             ></input>
             {errors.name && (
-              <p className="text-sm text-rose-800">{errors.name}</p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="text-sm text-rose-800"
+              >
+                {errors.name}
+              </motion.p>
             )}
           </div>
           <div className="lg:w-1/2">
@@ -94,7 +107,13 @@ const ContactForm = () => {
               className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
             ></input>
             {errors.email && (
-              <p className="text-sm text-rose-800">{errors.email}</p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="text-sm text-rose-800"
+              >
+                {errors.email}
+              </motion.p>
             )}
           </div>
         </div>
@@ -109,7 +128,13 @@ const ContactForm = () => {
             rows="6"
           ></textarea>
           {errors.message && (
-            <p className="text-sm text-rose-800">{errors.message}</p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="text-sm text-rose-800"
+            >
+              {errors.message}
+            </motion.p>
           )}
         </div>
         <button
@@ -124,7 +149,7 @@ const ContactForm = () => {
             <FiSend></FiSend>
           </div>
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 };
