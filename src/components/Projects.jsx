@@ -29,7 +29,7 @@ const Projects = () => {
               index === 3 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''
             }`}
           >
-            <div className="aspect-w-16 aspect-h-12 w-full">
+            <div className="aspect-w-16 aspect-h-14 w-full">
               <motion.img
                 whileHover={{ scale: 1.1 }}
                 src={project.image}

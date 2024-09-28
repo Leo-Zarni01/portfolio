@@ -29,14 +29,14 @@ export const PROJECTS = [
     {
         id: 3,
         name: "Nerd Station",
-        description: "Nerd Station 🤓 is a web app that we thoughtfully designed to help university students overcome common hurdles that hinder their academic progress. It has a diverse range of features where each demonstrates a strategy to help students overcome the lack of motivation assosciated with studies.",
+        description: "Nerd Station 🤓 is a thoughtfully designed web app that helps university students overcome academic hurdles and boost motivation through diverse, strategic features.",
         image: nerdstation,
         githubLink: "https://github.com/MerryRosalie/gdsc-hackathon-2023",
     },
     {
         id: 4,
         name: "Capstone Project - Successful Outcomes",
-        description: "A MERN stack (MongoDB, Express, React.js, Node.js) web application that maps course learning outcomes to Bloom’s Taxonomy, enabling educational institutions to analyze and improve program effectiveness, with a focus on data analytics, cognitive assessment, and accreditation support",
+        description: "A MERN stack web application that maps course learning outcomes to Bloom’s Taxonomy, helping educational institutions enhance program effectiveness through data analytics, cognitive assessment, and accreditation support",
         image: cotam,
         // conditional rendering for this object because cannot show github link
     }
