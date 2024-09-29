@@ -50,6 +50,7 @@ export const NavBarAlt = () => {
         </div>
         <div className="rounded-lg backdrop-blur-sm lg:hidden">
           <div className="flex items-center justify-between">
+            <div></div>
             <div className="flex items-center">
               <button
                 className="focus:outline-none lg:hidden"
