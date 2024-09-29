@@ -84,7 +84,7 @@ const ContactForm = () => {
               value={formData.name}
               placeholder="Name"
               onChange={handleChange}
-              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-violet-400 focus:outline-none"
             ></input>
             {errors.name && (
               <motion.p
@@ -104,7 +104,7 @@ const ContactForm = () => {
               value={formData.email}
               placeholder="Email"
               onChange={handleChange}
-              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-violet-400 focus:outline-none"
             ></input>
             {errors.email && (
               <motion.p
@@ -124,7 +124,7 @@ const ContactForm = () => {
             value={formData.message}
             placeholder="Enter your message here"
             onChange={handleChange}
-            className="w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+            className="w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-violet-400 focus:outline-none"
             rows="6"
           ></textarea>
           {errors.message && (
