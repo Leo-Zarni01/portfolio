@@ -63,7 +63,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="p-4" id="contact">
+    <div className="p-4 overflow-x-hidden overflow-y-hidden" id="contact">
       <Toaster></Toaster>
       <h2 className="my-8 text-center text-4xl font-semibold bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text tracking-tight text-transparent">
         Let's Connect

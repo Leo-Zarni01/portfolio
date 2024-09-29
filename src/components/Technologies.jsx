@@ -8,7 +8,10 @@ import { motion } from 'framer-motion';
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24" id="technologies">
+    <div
+      className="border-b border-neutral-800 pb-24 overflow-x-hidden overflow-y-hidden"
+      id="technologies"
+    >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}

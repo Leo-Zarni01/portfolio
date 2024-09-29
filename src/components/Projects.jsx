@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   return (
     <section
-      className="pt-20 border-b border-neutral-900 pb-4 lg:mb-35"
+      className="pt-20 border-b border-neutral-900 pb-4 lg:mb-35 overflow-x-hidden overflow-y-hidden"
       id="projects"
     >
       <motion.h2

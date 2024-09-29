@@ -26,7 +26,7 @@ export const NavBarAlt = () => {
   };
   return (
     <div>
-      <nav className="fixed left-0 right-0 top-4 z-50">
+      <nav className="fixed left-0 right-0 top-4 z-50 overflow-x-hidden overflow-y-hidden">
         <div className="mx-auto hidden max-w-lg items-center justify-center rounded-lg border border-stone-50 opacity-3  py-1 backdrop-blur-lg lg:flex">
           <div className="flex items-center justify-between gap-6">
             <div>

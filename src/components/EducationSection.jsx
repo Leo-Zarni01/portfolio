@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const EducationSection = () => {
   return (
     <section
-      className="py-8 border-b border-neutral-900 lg:mb-35"
+      className="py-8 border-b border-neutral-900 lg:mb-35 overflow-x-hidden overflow-y-hidden"
       id="education"
     >
       <motion.h2
