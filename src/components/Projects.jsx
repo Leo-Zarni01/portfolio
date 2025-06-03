@@ -17,7 +17,7 @@ const Projects = () => {
       >
         Projects
       </motion.h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-6">
         {PROJECTS.map((project, index) => (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -26,8 +26,12 @@ const Projects = () => {
             whileHover={{ scale: 1.05 }}
             key={project.id}
             className={`group relative overflow-hidden rounded-3xl ${
-              index === 3 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''
-            }`}
+              // First three items span 2 columns each (top row)
+              index < 3 ? 'lg:col-span-2' :
+                // Last two items are centered (columns 2-3 and 4-5)
+                index === 3 ? 'lg:col-start-2 lg:col-span-2' :
+                  'lg:col-span-2'
+              }`}
           >
             <div className="aspect-w-16 aspect-h-14 w-full">
               <motion.img
@@ -37,7 +41,7 @@ const Projects = () => {
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-300 font-bold opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-300 font-bold opacity-0 backdrop-blur-lg bg-black/50 transition-opacity duration-500 group-hover:opacity-100">
               <h3 className="mb-2 text-xl">{project.name}</h3>
               <p className="mb-12 p-4">{project.description}</p>
               {project.id !== 4 ? (

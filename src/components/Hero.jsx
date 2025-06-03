@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../assets/profilePic.png';
+import profilePic from '../assets/profilePic.jpg';
 import Resume from '../assets/Resume.pdf';
 import { IoMdDownload } from 'react-icons/io';
 import { motion } from 'framer-motion';
